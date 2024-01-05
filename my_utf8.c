@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 // Function to find the length of a null-terminated string
 // Declare a function named my_strlen that takes a pointer to an unsigned char (string) as its parameter
 int my_strlen(unsigned char *str) {
@@ -16,6 +17,7 @@ int my_strlen(unsigned char *str) {
     // Return the final length of the string
     return len;
 }
+
 
 // Function to copy a null-terminated string from source to destination
 // Declare a function named my_strcpy that takes two pointers to unsigned char (source and destination strings) as its parameters
@@ -35,6 +37,7 @@ void my_strcpy(unsigned char *dest, unsigned char *src) {
     // Add a null character at the end of the destination string to terminate it
     dest[i] = '\0';
 }
+
 
 // Function to concatenate two null-terminated strings
 // Declare a function named my_strcat that takes two pointers to unsigned char (destination and source strings) as its parameters
@@ -57,6 +60,7 @@ void my_strcat(unsigned char *dest, unsigned char *src) {
     // Add a null character at the end of the concatenated string to terminate it
     dest[dest_len + i] = '\0';
 }
+
 
 // Function to compare two strings, similar to strcmp()
 // Declare a function named my_strcmp that takes two pointers to unsigned char (strings to be compared) as its parameters
@@ -127,6 +131,7 @@ int my_utf8_encode(unsigned char *input, unsigned char *output) {
     // Return the length of the encoded string
     return output_index;
 }
+
 
 // Function to decode a UTF-8 string
 // Declare a function named my_utf8_decode that takes two pointers to unsigned char (input and output strings) as its parameters
@@ -254,6 +259,7 @@ int my_utf8_check(unsigned char *string) {
     return 1;
 }
 
+
 // Function to find the length of a UTF-8 string
 // Declare a function named my_utf8_strlen that takes a pointer to an unsigned char (string) as its parameter
 int my_utf8_strlen(unsigned char *string) {
@@ -278,6 +284,7 @@ int my_utf8_strlen(unsigned char *string) {
     // Return the final length of the UTF-8 string
     return len;
 }
+
 
 // Function to get the UTF8 encoded character at a specified index
 // Declare a function named my_utf8_charat that takes a pointer to an unsigned char (string) and an integer index as its parameters
@@ -364,6 +371,7 @@ int my_utf8_strcmp(unsigned char *string1, unsigned char *string2) {
     return *string1 - *string2;
 }
 
+
 // Additional Function 1: Count occurrences of a specific UTF-8 character in a string
 // Declare a function named my_utf8_count_occurrences that takes two pointers to unsigned char (string and character) as its parameters
 int my_utf8_count_occurrences(unsigned char *string, unsigned char *character) {
@@ -401,6 +409,7 @@ int my_utf8_count_occurrences(unsigned char *string, unsigned char *character) {
     return count;
 }
 
+
 // Additional Function 2: Convert a UTF-8 string to uppercase
 // Declare a function named my_utf8_to_uppercase that takes a pointer to an unsigned char (string) as its parameter
 void my_utf8_to_uppercase(unsigned char *string) {
@@ -425,9 +434,11 @@ void my_utf8_to_uppercase(unsigned char *string) {
     }
 }
 
+
 /////////////////////////////////////
 ////////// TEST FUNCTIONS ///////////
 /////////////////////////////////////
+
 
 // Test my_strcmp function
 void test_my_strcmp() {
@@ -460,6 +471,7 @@ void test_my_strcmp() {
     printf("\n");
 }
 
+
 // Test my_utf8_encode function
 void test_my_utf8_encode() {
     printf("Testing my_utf8_encode:\n");
@@ -487,6 +499,7 @@ void test_my_utf8_encode() {
 
     printf("\n");
 }
+
 
 // Test my_utf8_decode function
 void test_my_utf8_decode() {
@@ -516,6 +529,7 @@ void test_my_utf8_decode() {
     printf("\n");
 }
 
+
 // Test my_utf8_check function
 void test_my_utf8_check() {
     printf("Testing my_utf8_check:\n");
@@ -543,6 +557,7 @@ void test_my_utf8_check() {
     printf("\n");
 }
 
+
 // Test my_utf8_strlen function
 void test_my_utf8_strlen() {
     printf("Testing my_utf8_strlen:\n");
@@ -564,6 +579,7 @@ void test_my_utf8_strlen() {
 
     printf("\n");
 }
+
 
 // Test my_utf8_charat function
 void test_my_utf8_charat() {
@@ -604,6 +620,7 @@ void test_my_utf8_charat() {
     printf("\n");
 }
 
+
 // Test my_utf8_strcmp function
 void test_my_utf8_strcmp() {
     printf("Testing my_utf8_strcmp:\n");
@@ -634,6 +651,7 @@ void test_my_utf8_strcmp() {
 
     printf("\n");
 }
+
 
 // Test my_utf8_count_occurrences function
 void test_my_utf8_count_occurrences() {
@@ -672,6 +690,7 @@ void test_my_utf8_count_occurrences() {
     printf("\n");
 }
 
+
 // Test my_utf8_to_uppercase function
 void test_my_utf8_to_uppercase() {
     printf("Testing my_utf8_to_uppercase:\n");
@@ -697,6 +716,7 @@ void test_my_utf8_to_uppercase() {
     printf("\n");
 }
 
+
 // Test function to demonstrate usage
 void test_functions() {
     test_my_strcmp();
@@ -709,6 +729,7 @@ void test_functions() {
     test_my_utf8_count_occurrences();
     test_my_utf8_to_uppercase();
 }
+
 
 int main() {
     test_functions();
