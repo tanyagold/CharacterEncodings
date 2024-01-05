@@ -72,7 +72,6 @@ Clone the repository and include the C source file in your project. Utilize the 
 ```c
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 // Include the UTF-8 string manipulation code file
 
