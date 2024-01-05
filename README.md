@@ -1,4 +1,3 @@
-# CharacterEncodings
 # UTF-8 String Manipulation in C
 
 This repository contains C code for manipulating UTF-8 encoded strings. The code provides functions for encoding, decoding, comparing, checking validity, and performing various operations on UTF-8 strings. Additionally, there are two custom functions for counting occurrences of a specific UTF-8 character and converting a UTF-8 string to uppercase.
